@@ -366,7 +366,7 @@ static NSString *const kPostHTTPMethod = @"POST";
     return [FBRequest requestForPostOpenGraphObject:object];
 }
 
-+ (FBRequest *)requestForUpdateOpenGraphObject:(id<FBOpenGraphObject>)object {
++ (FBRequest *)requestForUpdateOpenGraphObject:(NSMutableDictionary<FBOpenGraphObject> *)object {
     return [FBRequest requestForUpdateOpenGraphObjectWithId:object[@"id"] graphObject:object];
 }
 
